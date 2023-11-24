@@ -14,6 +14,6 @@ namespace CRUDEFCoreWithSwagger.Context
 
         }
 
-        public DbSet<Student> Students { get; set; }
+        public virtual DbSet<Student> Students { get; set; }
     }
 }

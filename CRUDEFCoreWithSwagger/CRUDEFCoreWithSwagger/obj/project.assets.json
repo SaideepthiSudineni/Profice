@@ -6510,11 +6510,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sudin\\source\\repos\\CRUDEFCoreWithSwagger\\CRUDEFCoreWithSwagger\\CRUDEFCoreWithSwagger.csproj",
+      "projectUniqueName": "C:\\Users\\sudin\\source\\Profice\\CRUDEFCoreWithSwagger\\CRUDEFCoreWithSwagger\\CRUDEFCoreWithSwagger.csproj",
       "projectName": "CRUDEFCoreWithSwagger",
-      "projectPath": "C:\\Users\\sudin\\source\\repos\\CRUDEFCoreWithSwagger\\CRUDEFCoreWithSwagger\\CRUDEFCoreWithSwagger.csproj",
+      "projectPath": "C:\\Users\\sudin\\source\\Profice\\CRUDEFCoreWithSwagger\\CRUDEFCoreWithSwagger\\CRUDEFCoreWithSwagger.csproj",
       "packagesPath": "C:\\Users\\sudin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sudin\\source\\repos\\CRUDEFCoreWithSwagger\\CRUDEFCoreWithSwagger\\obj\\",
+      "outputPath": "C:\\Users\\sudin\\source\\Profice\\CRUDEFCoreWithSwagger\\CRUDEFCoreWithSwagger\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\sudin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6580,6 +6580,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[3.1.25, 3.1.25]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -6588,7 +6594,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\3.1.426\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
       }
     }
   }

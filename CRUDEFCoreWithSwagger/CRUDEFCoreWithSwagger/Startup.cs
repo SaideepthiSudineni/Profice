@@ -1,4 +1,7 @@
+using CRUDEFCoreWithSwagger.BAL;
 using CRUDEFCoreWithSwagger.Context;
+using CRUDEFCoreWithSwagger.DAL;
+using CRUDEFCoreWithSwagger.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
@@ -55,7 +58,9 @@ namespace CRUDEFCoreWithSwagger
             services.AddMvc();
             services.AddDbContext<StudentDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DbUniversity")));
             services.AddControllers();
-
+            services.AddHttpClient();
+            services.AddTransient<IStudentRepository<Student>, StudentRepository>();
+            services.AddTransient<StudentService, StudentService>();
             ////Register swagger
             services.AddSwaggerGen(c => {
                 c.SwaggerDoc("v1", new OpenApiInfo
